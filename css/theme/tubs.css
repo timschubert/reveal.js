@@ -18,7 +18,7 @@ body {
   background-color: #ffffff; }
 
 .reveal {
-  font-family: "nexus", sans;
+  font-family: "NexusSansPro";
   font-size: 40px;
   font-weight: normal;
   color: #black; }
@@ -49,7 +49,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #be1e3c;
-  font-family: "nexus", Impact, sans;
+  font-family: "NexusSansPro";
   font-weight: bold;
   line-height: 1.2;
   letter-spacing: normal;
