@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'NexusSansPro';
+    src: url('NexusSansPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NexusSansPro';
+    src: url('NexusSansPro-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'NexusSerifPro';
+    src: url('NexusSerifPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NexusSerifPro';
+    src: url('NexusSerifPro-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+

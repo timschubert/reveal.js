@@ -1,0 +1,90 @@
+/**
+ * TU Braunschweig Corporate Design theme for reveal.js.
+ * Author: Tim Schubert
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/nexus/nexus.css);
+// @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+
+/**
+ * TU Braunschweig Corporate Design colors
+ */
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+
+// colors
+$tubsred: #be1e3c;
+$white: #ffffff;
+$black: #000000;
+$yellow: #ffc82a;
+$orange: #e16d00;
+$darkred: #711c2f;
+$brightgreen: #acc13a;
+$green: #6d8300;
+$darkgreen: #00534a;
+$brightblue: #66b4d3;
+$blue: #00709b;
+$darkblue: #003f57;
+$brightmagent: #8a307f;
+$magenta: #511246;
+$darkmangenta: #4c1830;
+
+
+// Override theme settings (see ../template/settings.scss)
+
+// Background of the presentation
+$backgroundColor: $white;
+
+// Primary/body text
+$mainFont: 'NexusSansPro';
+$mainFontSize: 40px;
+$mainColor: #black;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'NexusSansPro';
+$headingColor: $tubsred;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$headingFontWeight: bold;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 3.77em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+// Links and actions
+$linkColor: $tubsred;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: $darkblue;
+$selectionColor: $white;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+	background: $backgroundColor;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
