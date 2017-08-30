@@ -1,36 +1,38 @@
+@charset "UTF-8";
 /**
- * TU Braunschweig Corporate Design theme for reveal.js.
- * Author: Tim Schubert
+ * TU Braunschweig theme for reveal.js.
+ *
+ * By Tilman Stehr
  */
 @import url(../../lib/font/nexus/nexus.css);
-/**
- * TU Braunschweig Corporate Design colors
- */
 html * {
   color-profile: sRGB;
   rendering-intent: auto; }
+
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+  color: #fff; }
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #ffffff;
-  background-color: #ffffff; }
+  background: #000;
+  background-color: #000; }
 
 .reveal {
-  font-family: "NexusSansPro";
-  font-size: 40px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
   font-weight: normal;
-  color: #black; }
+  color: #222; }
 
 ::selection {
-  color: #ffffff;
-  background: #003f57;
+  color: #fff;
+  background: #e97389;
   text-shadow: none; }
 
 ::-moz-selection {
-  color: #ffffff;
-  background: #003f57;
+  color: #fff;
+  background: #e97389;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -48,9 +50,9 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #be1e3c;
-  font-family: "NexusSansPro";
-  font-weight: bold;
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: none;
@@ -58,13 +60,13 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 1.44rem; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 1.2em; }
 
 .reveal h3 {
-  font-size: 1.55em; }
+  font-size: 1.1em; }
 
 .reveal h4 {
   font-size: 1em; }
@@ -220,7 +222,7 @@ body {
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #e55d76;
+  color: #e24764;
   text-shadow: none;
   border: none; }
 
@@ -234,7 +236,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #black;
+  border: 4px solid #222;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {
@@ -271,16 +273,16 @@ body {
   border-top-color: #be1e3c; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #e55d76; }
+  border-right-color: #e24764; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #e55d76; }
+  border-left-color: #e24764; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #e55d76; }
+  border-bottom-color: #e24764; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #e55d76; }
+  border-top-color: #e24764; }
 
 /*********************************************
  * PROGRESS BAR
@@ -293,3 +295,96 @@ body {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+html {
+  font-size: 22px; }
+
+.reveal .slides {
+  text-align: left;
+  background: white; }
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  padding: 5.45rem 2.2rem 0;
+  height: 100%;
+  box-sizing: border-box;
+  background: url(tubs-res/tubs.svg) bottom 1.4rem left -0.1rem no-repeat, linear-gradient(to bottom, #dddddd, #dddddd) no-repeat, linear-gradient(to bottom, #be1e3c, #be1e3c) bottom 3.9rem left 0 no-repeat, white;
+  background-size: 9.3rem auto, 100% 4.45rem, 100% 0.1rem, auto; }
+
+section::before {
+  content: "section::before { content: 'Bla'} im CSS setzen um diesen Text zu ändern";
+  position: absolute;
+  bottom: 3rem;
+  left: 9.5rem;
+  font-size: .6rem; }
+
+section::after {
+  content: " ";
+  position: absolute;
+  bottom: .8rem;
+  right: 1rem;
+  width: 10rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right; }
+
+section h1:first-child {
+  position: absolute;
+  top: 2.5rem; }
+
+.reveal .slides > section.title,
+.reveal .slides > section > section.title {
+  background: url(tubs-res/tubs.svg) top 3.8rem left 0 no-repeat, url(tubs-res/defaulttitlepicture.jpg) top 7.5rem left 1.65rem no-repeat, linear-gradient(to bottom, #fff0b2, #fff0b2) bottom 3rem left 1.65rem no-repeat, linear-gradient(to bottom, #be1e3c, #be1e3c) bottom 1.5rem left 1.65rem no-repeat, white;
+  background-size: 13rem auto, calc(100% - 3.3rem) auto, calc(100% - 3.3rem) 20rem, calc(100% - 3.3rem) 1.5rem;
+  padding: 0; }
+  .reveal .slides > section.title::before,
+  .reveal .slides > section > section.title::before {
+    display: none; }
+  .reveal .slides > section.title::after,
+  .reveal .slides > section > section.title::after {
+    bottom: auto;
+    width: 13rem;
+    height: 3.7rem;
+    top: 2rem;
+    right: 1.65rem;
+    background-position: top right; }
+  .reveal .slides > section.title h1,
+  .reveal .slides > section > section.title h1 {
+    position: absolute;
+    top: auto;
+    left: 4.3rem;
+    bottom: 7.3rem; }
+  .reveal .slides > section.title h2,
+  .reveal .slides > section > section.title h2 {
+    position: absolute;
+    top: auto;
+    left: 4.3rem;
+    bottom: 4.8rem;
+    font-size: 1rem;
+    font-weight: normal; }
+  .reveal .slides > section.title .image,
+  .reveal .slides > section > section.title .image {
+    position: absolute;
+    top: 7.5rem;
+    left: 1.65rem;
+    width: calc(100% - 3.3rem);
+    height: 14.5rem;
+    background-size: cover;
+    background-position: center; }
+  .reveal .slides > section.title .image::after,
+  .reveal .slides > section > section.title .image::after {
+    content: '';
+    position: absolute;
+    top: -3.8rem;
+    left: -1.65rem;
+    width: 13rem;
+    height: 5rem;
+    background: url(tubs-res/tubs.svg) no-repeat 100%;
+    background-size: contain; }
+
+.reveal .progress {
+  background: #dddddd; }
+
+.reveal ul {
+  list-style-type: square; }
